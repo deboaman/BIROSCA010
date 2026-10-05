@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Birosca 010 — O comércio da BR na palma da mão</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --terra:#E8501E; --sol:#F2A20C; --asfalto:#0F0F0F;
+    --creme:#F4EFE6; --mato:#2D5016;
+    --font-d:'Bitter',Georgia,serif;
+    --font-s:'Inter',system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--font-s);background:var(--creme);color:var(--asfalto);line-height:1.6}
+  header{padding:2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--asfalto)}
+  .logo{font-family:var(--font-d);font-size:1.6rem;font-weight:700;display:flex;align-items:center;gap:.6rem}
+  .logo b{color:var(--terra);font-size:1.8rem}
+  nav a{margin-left:1.5rem;text-decoration:none;color:var(--asfalto);font-weight:500}
+  nav a:hover{color:var(--terra)}
+  main{max-width:1100px;margin:0 auto;padding:4rem 2rem}
+  h1{font-family:var(--font-d);font-size:clamp(2.5rem,6vw,4.5rem);line-height:1;margin-bottom:1.5rem}
+  h1 em{color:var(--terra);font-style:normal}
+  .lead{font-size:1.2rem;color:#3a3a3a;max-width:40ch;margin-bottom:2rem}
+  .cta{display:inline-block;padding:1rem 2rem;background:var(--terra);color:var(--creme);text-decoration:none;font-weight:700;border:3px solid var(--asfalto);transition:.2s}
+  .cta:hover{background:var(--asfalto);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--terra)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;margin-top:4rem}
+  .card{padding:2rem;background:#fff;border:3px solid var(--asfalto)}
+  .card h3{font-family:var(--font-d);margin-bottom:.5rem;color:var(--terra)}
+  footer{padding:2rem;text-align:center;border-top:3px solid var(--asfalto);font-size:.85rem;color:#666}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><b>010</b> Birosca</div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#vender">Sou vendedor</a>
+    <a href="#comprar">Quero comprar</a>
+  </nav>
+</header>
+
+<main>
+  <h1>O comércio da <em>BR-010</em><br>na palma da mão.</h1>
+  <p class="lead">
+    Marketplace local para Dom Eliseu/PA e região. Conecta vendedores,
+    produtores rurais e prestadores de serviço a quem quer comprar pertinho.
+  </p>
+  <a href="#vender" class="cta">Quero vender</a>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🍲 Comida</h3>
+      <p>Tacacá, vatapá, bolo de macaxeira, açaí, mel, queijo do produtor.</p>
+    </div>
+    <div class="card">
+      <h3>🌿 Agro</h3>
+      <p>Hortifruti, muda, semente, ferramenta, tudo do produtor rural.</p>
+    </div>
+    <div class="card">
+      <h3>🛠️ Serviço</h3>
+      <p>Eletricista, encanador, diarista, pintor, montador. Orçamento na hora.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Birosca 010 · Everton Borgeia Machado ·
+  <a href="https://github.com/deboaman/BIROSCA010">GitHub</a>
+</footer>
+</body>
+</html>
